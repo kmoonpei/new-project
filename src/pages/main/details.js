@@ -1,7 +1,12 @@
 import React, { Component } from 'react';
 import { View, Text, StyleSheet } from 'react-native';
+import HeaderBar from '../../common/HeaderBar';
 
 export default class Details extends Component {
+    static pars = {
+        title:'details'
+    }
+    static navigationOptions = ({ navigation, screenProps }) => HeaderBar(Details.pars)
     constructor(props) {
         super(props);
         this.state = {};
@@ -19,7 +24,7 @@ let styles = StyleSheet.create({
         justifyContent: 'center',
     },
     bg: {
-        flex:1,
+        flex: 1,
         // backgroundColor: '#45c',
     },
 })

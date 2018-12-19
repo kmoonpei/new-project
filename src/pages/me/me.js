@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
-import { View, Text, StyleSheet } from 'react-native';
-import HeaderBar from './../common/HeaderBar';
+import { View, Text, StyleSheet, Button } from 'react-native';
+import HeaderBar from '../../common/HeaderBar';
 
 export default class Me extends Component {
     static pars = {
-        Image: require('../assets/me.png'),
-        msg: 'Me',
+        header: null
     }
     static navigationOptions = ({ navigation, screenProps }) => HeaderBar(Me.pars)
     constructor(props) {
@@ -14,7 +13,10 @@ export default class Me extends Component {
     }
     render() {
         return (
-            <View style={[styles.bg, styles.center]}><Text>me</Text></View>
+            <View style={[styles.bg, styles.center]}>
+                <Text>me</Text>
+                <Button title='go about' onPress={() => this.props.navigation.navigate('About')} />
+            </View>
         )
     }
 }

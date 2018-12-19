@@ -17,14 +17,14 @@ export default function HeaderBar(params = {}, screenProps = {}, navigation = {}
             backgroundColor: theme.themeColor,
         },
         headerTintColor: theme.hdtxt,
-        tabBarLabel: ({ focused, tintColor }) => (
-            <Text style={[Variable.df, focused ? { color: theme.themeColor } : { color: tintColor }]}>{params.msg}</Text>
-        ),
-        tabBarIcon: ({ focused, tintColor }) => (
-            <Image source={params.Image}
-                style={[focused ? { tintColor: theme.themeColor } : { tintColor: tintColor }, Variable.icon]}
-            />
-        ),
+        // tabBarLabel: ({ focused, tintColor }) => (
+        //     <Text style={[Variable.df, focused ? { color: theme.themeColor } : { color: tintColor }]}>{params.msg}</Text>
+        // ),
+        // tabBarIcon: ({ focused, tintColor }) => (
+        //     <Image source={params.Image}
+        //         style={[focused ? { tintColor: theme.themeColor } : { tintColor: tintColor }, Variable.icon]}
+        //     />
+        // ),
         gesturesEnabled: params.isBack ? false : true,
     })
 
