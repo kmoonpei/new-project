@@ -8,7 +8,6 @@ import {
 import Main from '../pages/main/main';
 import Me from '../pages/me/me';
 import Details from '../pages/main/details';
-import Icon from 'react-native-vector-icons/Ionicons';
 import About from '../pages/about/about';
 import { Variable } from './../Variable';
 
